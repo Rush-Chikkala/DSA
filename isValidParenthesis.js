@@ -44,9 +44,35 @@ function isValidParenthesis(string) {
 
     return stack.length === 0;//to handle ((( scenario where we have more opening brackets than closing brackets. In that case, the stack will not be empty at the end of the loop, and we should return false.)
 }
-console.log(isValidParenthesis("((()))"))
+console.log(isValidParenthesis("(((}))"))
 
 // "()[]{}" → true
 // "(]"     → false
 // "([{}])" → true
 // "([]){}" ->true
+
+
+//saving closed brackets instead of opening brackets
+
+// const map = {
+//     "(": ")",
+//     "{": "}",
+//     "[": "]"
+// };
+
+// function isValidParenthesis(str) {
+//     const stack = [];
+
+//     for (const ch of str) {
+
+//         if (map[ch]) {
+//             stack.push(map[ch]); // push expected closing bracket
+//         } else {
+//             if (stack.pop() !== ch) {
+//                 return false;
+//             }
+//         }
+//     }
+
+//     return stack.length === 0;
+// }

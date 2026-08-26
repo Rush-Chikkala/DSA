@@ -27,7 +27,7 @@
 
 function maxSumSubArrayofSizeK(arr, k) {
     let windowSum = 0;
-    let maxSum = 0;
+    let maxSum = -Infinity;
     let left = 0;
 
     for (let right = 0; right < arr.length; right++) {
@@ -60,3 +60,34 @@ console.log(maxSumSubArrayofSizeK([2,1,5,1,3,2],3));
 // rolling metrics (last N events)
 
 // moving averages
+
+
+
+function maxSubArray(array,k){ //maxSum =8
+    let maxSum =0
+    let left =0
+    let sum =0
+    let maxSumStartIndex =0
+    for(let right=0;right<array.length;right++){
+       sum = sum+array[right]
+       console.log('sum', sum)
+       if(right>=k-1){
+          if(sum>maxSum){
+             maxSumStartIndex = left
+          }
+          maxSum = Math.max(sum,maxSum)
+          console.log('maxSum', maxSum)
+          sum = sum-array[left]
+          left++
+       }
+    }
+    console.log(maxSumStartIndex)
+    return array.slice(maxSumStartIndex,maxSumStartIndex+k)
+}
+
+array = [2, 1, 5, 1, 3, 2]
+        // 0   1  2  3  4  5     0 to 3   1 to 4 2to 
+k = 3
+console.log(maxSubArray(array,3))
+
+//returns the actual elements instead of sum 
