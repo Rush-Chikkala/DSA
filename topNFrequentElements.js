@@ -1,3 +1,20 @@
+// Problem: Top K Frequent Elements
+// Given an integer array nums and an integer k, return the k most frequent elements.
+// You may return the answer in any order.
+//
+// Example 1:
+//   Input: nums = [1, 1, 1, 2, 2, 3], k = 2
+//   Output: [1, 2]
+//
+// Example 2:
+//   Input: nums = [5, 2, 5, 1, 2, 5, 1, 1], k = 2
+//   Output: [5, 1]
+//   Explanation: 5 appears 3 times, 1 appears 3 times, 2 appears 2 times
+//
+// Example 3:
+//   Input: nums = [1], k = 1
+//   Output: [1]
+//
 function topkFrequentElements(array,k){
     let map = new Map()
     for(let ele of array){

@@ -1,3 +1,21 @@
+// Problem: Maximum Sum Subarray of Size K (Sliding Window)
+// Given an array of integers and a number k, find the maximum sum of a subarray of size k.
+//
+// Example 1:
+//   Input: array = [2, 1, 5, 1, 3, 2], k = 3
+//   Output: 9
+//   Explanation: Subarray with maximum sum is [5, 1, 3]
+//
+// Example 2:
+//   Input: array = [2, 3, 4, 1, 5], k = 2
+//   Output: 7
+//   Explanation: Subarray with maximum sum is [3, 4]
+//
+// Example 3:
+//   Input: array = [1, 4, 2, 10, 23, 3, 1, 0, 20], k = 4
+//   Output: 39
+//   Explanation: Subarray with maximum sum is [4, 2, 10, 23]
+//
 // function maxSumSubArrayofSizeK(array,k){
 //     let max_sum =0
 //     let left =0 
