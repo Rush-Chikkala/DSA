@@ -38,3 +38,15 @@ console.log(longestSubstring("abcdafbcbb")); // 6 ("bcda f" → actually "abcdaf
 console.log(longestSubstring("bbbbb")); // 1 ("b")
 console.log(longestSubstring("pwwkew")); // 3 ("wke")
 //hasdmap technique and sliding window technique
+
+// Complexity
+//
+// This is:
+//
+//     Time: O(n)
+//
+// Each character is processed once.
+//
+//     Space: O(k)
+//
+// where k is the number of distinct characters stored in the map.
