@@ -52,8 +52,8 @@ var maxProfitOptimized = function(array){
     return maxSell != -Infinity ? maxSell:0
 
 }
-console.log(maxProfitOptimized([7, 1, 5, 3, 6, 4]))
-console.log(maxProfitOptimized([7,6,4,3,1]))
+console.log(maxProfitOptimized([7, 1, 5, 3, 6, 4])) //5
+console.log(maxProfitOptimized([7,6,4,3,1])) //0
 
 //  Time O(n)
 // sPACE o(1)

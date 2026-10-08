@@ -42,6 +42,7 @@ function merge(leftArray,rightArray){
 
 }
 console.log(mergeSort([6,2,4,1,5,3]))
+console.log(merge_sort([6,2,4,1,5,3]))
 // o(nlogn)
 // logn levels as we are dividing and n comparisions at each level
 // but here we are using arrays so its overhead of space complexity so will go for index based one

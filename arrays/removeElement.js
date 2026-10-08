@@ -59,8 +59,8 @@ function removeElementOrder(array,value){
     }
     return j
 }
-console.log(removeElementOrder(array,value))
-console.log(array)
+console.log(removeElementOrder(array,value)) //5
+console.log(array) // [0,1,3,0,4,2,2,2]
 
 
 // Time = O(n)

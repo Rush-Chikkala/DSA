@@ -34,9 +34,9 @@ function maxConsecutiveones(array){
     return Math.max(length,maxLength)
 
 }
-console.log(maxConsecutiveones([1,1,0,1,1,1]))
-console.log(maxConsecutiveones([1,2,0,1,1,2]))
-console.log(maxConsecutiveones([1,0,1,1,0,1]))
+console.log(maxConsecutiveones([1,1,0,1,1,1])) //3
+console.log(maxConsecutiveones([1,2,0,1,1,2])) //2
+console.log(maxConsecutiveones([1,0,1,1,0,1])) //2
 
 //Time Complexity O(N)
 //Space Complexity O(1)

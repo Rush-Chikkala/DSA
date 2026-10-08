@@ -13,9 +13,9 @@ function moveZeroes(array){
     }
 
 }
-let array = [0,1,0,3,12]
+let array = [0,1,0,3,12] 
 moveZeroes(array)
-console.log(array)
+console.log(array) //[1,3,12,0,0]
 
 // TIME O(n)
 // Space O(1)
